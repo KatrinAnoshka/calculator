@@ -1,0 +1,174 @@
+body { 
+  background: url("bg-calculator.jpg") no-repeat center center fixed;
+  background-size: cover;
+  text-align: center;
+}
+
+.container {
+	display: -webkit-box;
+	display: -ms-flexbox;
+	display: flex;
+	-webkit-box-align: center;
+	    -ms-flex-align: center;
+	        align-items: center;
+	-webkit-box-pack: center;
+	    -ms-flex-pack: center;
+	        justify-content: center;
+	margin-top: 80px;        
+	height: 100%;
+	width: 100%;
+}
+
+/*Scholar owl*/
+.banner {
+  width: 320px;
+  position: absolute;
+  margin-left: -220px;
+  z-index: 0;
+}
+
+.banner img {
+  width: 100%; 
+}
+
+ /*Calculator*/
+#calc-container {
+	width: 20em;
+	height: 29em;
+	position: relative;
+	background: #949287;
+	-webkit-box-shadow: .3em -.3em 2em -.1em,
+							0 -.1em 8px 6px rgba(0,0,0,.4) inset;
+	        box-shadow: .3em -.3em 2em -.1em,
+							0 -.1em 8px 6px rgba(0,0,0,.4) inset;
+	border-top-left-radius: 60% 12px;
+	border-top-right-radius: 60% 12px;
+	border-bottom-left-radius: 60% 20px;
+	border-bottom-right-radius: 60% 20px;
+  z-index: 20;
+}
+
+/*Name of calculator*/
+.calc-title {
+	font-family: "Georgia", serif;
+	font-size: 22px;
+	color: #d5d949;
+	margin-bottom: 4px;
+	display: inline-block;
+	position: relative;
+}
+
+.calc-sub {
+	font-family: "Georgia", serif;
+	font-size: 15px;
+  letter-spacing: 1.5px;
+	color: white;
+}
+
+/*Buttons of calculator*/
+#calc-screen {
+	font-family: 'Orbitron', sans-serif;
+	color: rgba(0,0,0, .5);
+	font-size: 26px;
+	line-height: 30px;
+	text-align: right;
+	padding-right: 6px;
+	background: #d5d949;
+	border: 2px inset rgba(0,0,0,0.4);
+	border-radius: .1em;
+	-webkit-box-shadow: 0 0 1.5em .1em rgba(0,0,0,0.25) inset;
+	        box-shadow: 0 0 1.5em .1em rgba(0,0,0,0.25) inset;
+	width: 9em;
+	height: 1.6em;	
+	position: relative;
+	top: .1em;
+  margin-top: 8px;
+}
+
+::-webkit-input-placeholder {
+	color: rgba(0,0,0, .5);
+}
+
+:-moz-placeholder { /* Firefox 18- */
+	color: rgba(0,0,0, .5);
+}
+
+::-moz-placeholder {  /* Firefox 19+ */
+	color: rgba(0,0,0, .5);
+}
+
+:-ms-input-placeholder {  
+	color: rgba(0,0,0, .5);
+}
+
+/*Buttons of calculator*/
+#buttons {
+	list-style-type: none;
+	position: relative;
+	top: 1em;
+	margin: 11px auto;
+	text-align: center;
+	width: 17em;
+	height: 16em;
+	-webkit-column-count: 4;
+  -webkit-column-gap:   0px;
+  -moz-column-count:    4;
+  -moz-column-gap:      0px;
+  column-count:         4;
+  column-gap:           0px;
+	-webkit-column-fill: balance;
+	column-fill: balance;
+}
+
+button {
+	font-weight: 500;
+  font-size: 15px;
+	color: white;	
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #484654), to(#151518));	
+	background: linear-gradient(#484654 5%, #151518);
+	background: -webkit-linear-gradient(#484654 5%, #151518);
+  background: -o-linear-gradient(#484654 5%, #151518);
+  background: -moz-linear-gradient(#484654 5%, #151518);	
+	border: none;
+	border-top-left-radius: 60% 6px;
+	border-top-right-radius: 60% 6px;
+	border-bottom-left-radius: 60% 6px;
+	border-bottom-right-radius: 60% 6px;	
+	-webkit-box-shadow:	0 0 1px 2px rgba(255,255,255,.25) inset;	
+	        box-shadow:	0 0 1px 2px rgba(255,255,255,.25) inset;	
+	width: 50px;
+	height: 35px;
+	margin: 4px;
+}
+
+button:active {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(5%, #151518), to(#484654));
+	background: linear-gradient(#151518 5%, #484654);
+	background: -webkit-linear-gradient(#151518 5%, #484654);
+  background: -o-linear-gradient(#151518 5%, #484654);
+  background: -moz-linear-gradient(#151518 5%, #484654);
+}
+
+:focus {
+	outline: none;
+}
+
+.clear {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #c36441), to(#6d090b));
+	background: linear-gradient(#c36441 10%, #6d090b);
+	background: -webkit-linear-gradient(#c36441 10%, #6d090b);
+  background: -o-linear-gradient(#c36441 10%, #6d090b);
+  background: -moz-linear-gradient(#c36441 10%, #6d090b);
+}
+
+.clear:active {
+	background: -webkit-gradient(linear, left top, left bottom, color-stop(10%, #6d090b), to(#c36441));
+	background: linear-gradient(#6d090b 10%, #c36441);
+	background: -webkit-linear-gradient(#6d090b 10%, #c36441);
+  background: -o-linear-gradient(#6d090b 10%, #c36441);
+  background: -moz-linear-gradient(#6d090b 10%, #c36441);
+}
+
+.plus {
+	height: 5.2em;
+}
